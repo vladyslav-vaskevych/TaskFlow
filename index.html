@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow</title>
+
+    <!-- Připojení CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Připojení JavaScriptu -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="stranka">
+        <section class="aplikace">
+            <header class="hlavicka">
+                <p class="logo">✓ TaskFlow</p>
+                <h1>Měj své úkoly pod kontrolou</h1>
+                <p class="popis">Přidej si úkol a měj přehled o všem, co potřebuješ udělat.</p>
+            </header>
+            <div class="pridavani-ukolu">
+                <input type="text" id="vstupni-pole" placeholder="Co potřebuješ udělat?">
+                <button id="tlacitko-pridat">Přidat</button>
+
+            </div>
+            <section class="ukoly">
+                <div class="ukoly-hlavicka">
+                    <h2>Moje úkoly</h2>
+                    <p id="pocitadlo-ukolu">Tvoje úkoly: 0 </p>
+                </div>
+                <ul id="seznam-ukolu">
+
+                </ul>
+            </section>
+            <footer>
+                <p>TaskFlow © 2026</p>
+                <p>Made by Vaskevych Vladyslav</p>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>

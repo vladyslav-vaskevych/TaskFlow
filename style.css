@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: Arial, sans-serif;
+}
+
+.stranka {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.aplikace {
+    width: 100%;
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.hlavicka {
+    text-align: center;
+    margin-bottom: 30px;
+    h1{
+        margin: 0;
+        font-size: 30px;
+    }
+}
+
+.logo {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.popis {
+    margin: 0;
+    margin-top: 12px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.pridavani-ukolu {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    input{
+        flex: 1;
+        min-width: 0;
+        padding: 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    input:focus{
+        outline: none;
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+    button {
+        padding: 14px 22px;
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: #1d4ed8;
+    }
+}
+
+.ukoly {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+}
+.ukoly-hlavicka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    h2{
+        margin: 0;
+        font-size: 20px;
+    }
+    #pocitadlo-ukolu {
+        margin: 0;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+}
+
+#seznam-ukolu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+        margin-bottom: 10px;
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        transition: 0.5s;
+        span{
+            flex: 1;
+            min-width: 0;
+            overflow-wrap: anywhere;
+            cursor: pointer;
+        }
+        button {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            background-color: transparent;
+            color: #ef4444;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover {
+            background-color: #fee2e2;
+        }
+    }
+    li:hover {
+        background-color: #f1f5f9;
+    }
+}
+
+.hotovyukol {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+
+footer{
+    width: 100%;
+    background-color: transparent;
+    color: #64748b;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 1px;
+    padding: 15px 0 0;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-top: 25px;
+    p{
+        margin: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .stranka {
+        padding: 15px;
+        align-items: center;
+    }
+    .aplikace {
+        padding: 25px 20px;
+    }
+    .hlavicka {
+        h1{
+            font-size: 25px;
+        }
+    }
+    .pridavani-ukolu {
+        flex-direction: column;
+        button {
+            width: 100%;
+        }
+    }
+    .ukoly-hlavicka {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
